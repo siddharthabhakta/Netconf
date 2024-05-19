@@ -20,6 +20,13 @@ gcc -o netconf_client netconf_client.c -lxml2 -lssh -lnetconf2 -lyang
 Run: Run the client executable.
 ./netconf_client
 
+  Important Notes
+Authentication: The example uses a fixed password for simplicity. Replace the password handling code with a more secure method as needed.
+RPC: The example sends a get-config RPC. Modify the send_rpc function to create and send other RPCs as required.
+Error Handling: Add more robust error handling and logging for production use.
+This example demonstrates a basic NETCONF client that connects to a NETCONF server, sends an RPC, and processes the reply.
+Adjust the code to fit your specific requirements and security standards.
+
 #endif
 
 //Include necessary headers:
